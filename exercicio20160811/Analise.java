@@ -1,0 +1,6 @@
+class Analise{
+    Mensagem msg;
+
+    
+
+}
