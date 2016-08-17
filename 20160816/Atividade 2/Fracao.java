@@ -8,7 +8,7 @@ class Fracao{
 
     }
 
-    public Fracao(double numerador; double denominador){
+    public Fracao(double numerador, double denominador){
         this.numerador = numerador;
         if(denominador != 0){
             this.denominador = denominador;
@@ -20,29 +20,25 @@ class Fracao{
     }
 
      public double getDenominador(){
-        return this.numerador;
+        return this.denominador;
     }
 
-    public void setFracao(double numerador; double denominador){
+    public void setFracao(double numerador, double denominador){
         this.numerador = numerador;
         if(denominador != 0){
             this.denominador = denominador;
         }
     }
 
-    public Fracao somaFracao(Fracao x){
-        numeradorResultado = x.getNumerador() * this.numerador;
-        denominadorResultado = x.getDenominador() * this.denominador;
+    public Fracao multiplica(Fracao x){
+        double numeradorResultado = x.getNumerador() * this.numerador;
+        double denominadorResultado = x.getDenominador() * this.denominador;
         Fracao resultado = new Fracao(numeradorResultado,denominadorResultado);
         return resultado;
     }
 
-    public void exibirFracao(){
-        System.out.println(getNumerador+"/"getDenominador);
+    public void imprimir(){
+        System.out.println(getNumerador()+"/"+getDenominador());
     }
-
-
-
-
 
 }
