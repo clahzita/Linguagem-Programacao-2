@@ -46,7 +46,7 @@ public class Data{
         return this.segundo;
     }
 
-    public void imprimir(final int formato){
+    public void imprimir(int formato){
         System.out.println("ok");
 
     }
