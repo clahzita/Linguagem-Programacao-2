@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Credit()
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Credit\r\n
+comment1.params=creditoInicial
+comment1.target=Credit(int)
+comment2.params=
+comment2.target=int\ getSaldoEmCentavos()
+comment2.text=\r\n\ M\u00E9todo\ de\ Acesso\ que\ devolve\ o\ montante\ de\ cr\u00E9dito\ na\ conta\ do\ usu\u00E1rio\r\n\ \r\n\ @return\ \ \ \ \ o\ montante\ de\ cr\u00E9dito\ na\ conta\ do\ usu\u00E1rio\ \r\n
+comment3.params=saldoemcentavos
+comment3.target=void\ setSaldoEmCentavos(int)
+comment3.text=\r\n\ M\u00E9todo\ Modificador\ que\ faz\ altera\u00E7\u00E3o\ em\ valores\ de\ um\ atributo\ da\ classe\ de\ maneira\ protegida.\r\n\ \r\n\ @param\ \ saldoemcentavos\ \ \ valor\ a\ ser\ inicializado\ no\ campo\ saldoemcentavos\r\n
+comment4.params=entrada
+comment4.target=void\ topUp(int)
+comment5.params=saida
+comment5.target=void\ topDown(int)
+numComments=6

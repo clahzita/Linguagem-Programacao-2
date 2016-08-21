@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Tanque()
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Tanque\r\n
+comment1.params=tamanhoMaximo
+comment1.target=Tanque(int)
+comment2.params=tamanhoMaximo
+comment2.target=void\ setTamanhoMaximo(int)
+comment3.params=quantidadeCombustivel
+comment3.target=void\ setQuantidadeCombustivel(int)
+comment4.params=
+comment4.target=int\ getTamanhoMaximo()
+comment5.params=
+comment5.target=int\ getQuantidadeCombustivel()
+numComments=6

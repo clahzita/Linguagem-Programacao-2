@@ -10,9 +10,12 @@ public class Data{
 
 
     public Data(int dia, int mes, int ano){
-        this.dia = dia%30+1;
-        this.mes = mes%30+1;
+        this.dia = dia%30;
+        this.mes = mes%30;
         this.ano = ano;
+        this.hora = -1;
+        this.minuto = -1;
+        this.segundo = -1;
     }
 
     public Data(int dia, int mes, int ano, int hora, int minuto, int segundo){
@@ -47,8 +50,31 @@ public class Data{
     }
 
     public void imprimir(int formato){
-        System.out.println("ok");
+        if(this.hora == -1){
+                System.out.printf("%d/%d/%d\n",this.dia,this.mes,this.ano);
+        }
+        else{
+            if(formato == this.FORMATO_24H){
+                System.out.printf("%d/%d/%d %d:%d:%d\n",
+                    this.dia, this.mes, this.ano,
+                    this.hora, this.minuto, this.segundo);
+            }
+            else{
+                System.out.printf("%d/%d/%d %d:%d:%d %s\n",
+                    this.dia, this.mes, this.ano,
+                    this.hora%12, this.minuto, this.segundo,this.getAMPM());
+            }
+        }      
 
+    }
+
+    public String getAMPM(){
+         if(this.hora >= 0 && this.hora < 12){
+            return "AM";
+        }
+        else{
+            return "PM";
+        }
     }
 
 }

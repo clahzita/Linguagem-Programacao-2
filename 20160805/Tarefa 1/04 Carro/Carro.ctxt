@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Carro()
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Carro\r\n
+comment1.params=tipoDeCombustivel\ cilindrada\ tamanhoRoda\ tamanhoTanque\ qtdePortas
+comment1.target=Carro(java.lang.String,\ java.lang.String,\ int,\ int,\ int)
+comment2.params=portas\ qtdePortas
+comment2.target=void\ setPortas(Porta[],\ int)
+comment3.params=rodas\ tamanhoRoda
+comment3.target=void\ setRodas(Roda[],\ int)
+comment4.params=
+comment4.target=void\ ligarCarro()
+comment5.params=
+comment5.target=void\ desligarCarro()
+comment6.params=litrosAbastecido
+comment6.target=void\ abastecerCarro(int)
+numComments=7

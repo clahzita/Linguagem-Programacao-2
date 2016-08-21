@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=MusicList()
+comment0.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ MusicList\r\n
+comment1.params=file
+comment1.target=void\ addFile(java.lang.String)
+comment1.text=\r\n\ Esse\ m\u00E9todo\ adciona\ nome\ de\ m\u00FAsicas\ a\ lista.\r\n\ \r\n\ @param\ file\ Nome\ da\ m\u00FAsica\ a\ ser\ inserida\ na\ lista.\r\n
+comment2.params=number
+comment2.target=void\ removeFile(int)
+comment2.text=\r\n\ Esse\ m\u00E9todo\ remove\ um\ arquivo\ da\ lista\ por\ posi\u00E7\u00E3o.\r\n\ \r\n\ @param\ number\ N\u00FAmero\ da\ posi\u00E7\u00E3o\ em\ que\ o\ arquivo\ a\ ser\ removido\ se\ encontra\ na\ lista.\r\n
+comment3.params=name
+comment3.target=void\ removeFile(java.lang.String)
+comment3.text=\r\n\ Esse\ m\u00E9todo\ remove\ o\ primeiro\ arquivo\ que\ cont\u00E9m\ o\ par\u00E2metro\ "name"\ como\ uma\ substring.\r\n\ \r\n\ @param\ name\ Nome\ a\ ser\ buscado\ entre\ os\ nomes\ dos\ arquivos.\r\n
+comment4.params=
+comment4.target=void\ getNumberOfFiles()
+comment4.text=\r\n\ Esse\ m\u00E9todo\ mostra\ o\ n\u00FAmero\ de\ arquivos\ na\ lista.\r\n\ \r\n\ @param\ number\ N\u00FAmero\ da\ posi\u00E7\u00E3o\ em\ que\ a\ m\u00FAsica\ a\ ser\ removida\ se\ encontra\ na\ lista.\r\n
+comment5.params=
+comment5.target=void\ listFiles()
+comment5.text=\r\n\ Esse\ m\u00E9todo\ mostra\ os\ elementos\ contidos\ na\ lista.\r\n\ \r\n\ @param\ number\ N\u00FAmero\ da\ posi\u00E7\u00E3o\ em\ que\ a\ m\u00FAsica\ a\ ser\ removida\ se\ encontra\ na\ lista.\r\n
+comment6.params=file
+comment6.target=void\ playFile(java.lang.String)
+comment6.text=\r\n\ Esse\ m\u00E9todo\ usa\ um\ objeto\ SounEngine\ para\ tocar\ o\ arquivo\ de\ nome\ passado\ por\ par\u00E2metro.\ o\ n\u00FAmero\ de\ arquivos\ na\ lista.\r\n\ \r\n\ @param\ file\ Nome\ do\ arquivo\ na\ lista\ que\ ser\u00E1\ tocado,\ caso\ seja\ encontrado.\r\n
+comment7.params=
+comment7.target=void\ playAll()
+comment7.text=\r\n\ Esse\ m\u00E9todo\ usa\ um\ objeto\ SounEngine\ para\ tocar\ todos\ os\ arquivos\ da\ lista.\r\n\ \r\n
+numComments=8

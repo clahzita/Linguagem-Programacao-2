@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Roda()
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Roda\r\n
+comment1.params=tamanho
+comment1.target=Roda(int)
+comment2.params=tamanho
+comment2.target=void\ setTamanho(int)
+comment3.params=pressaoPneu
+comment3.target=void\ setPressaoPneu(int)
+comment4.params=
+comment4.target=int\ getTamanho()
+comment5.params=
+comment5.target=int\ getPressaoPneu()
+numComments=6

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=texto
+comment0.target=ContadorPalavras(java.lang.String)
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ ContadorPalavras\r\n
+comment1.params=texto
+comment1.target=void\ setTexto(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getTexto()
+comment3.params=textoOriginal
+comment3.target=java.lang.String[]\ quebrarTexto(java.lang.String)
+comment4.params=mapa
+comment4.target=void\ imprimirContagem(java.util.Map)
+comment5.params=
+comment5.target=void\ efetuarContagem()
+numComments=6

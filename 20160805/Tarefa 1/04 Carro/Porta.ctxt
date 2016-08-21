@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Porta()
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Porta\r\n
+comment1.params=
+comment1.target=void\ setPorta()
+comment1.text=\r\n\ A\u00E7\u00E3o\ de\ abrir\ e\ fechar\ a\ porta.\ Se\ aberta\ est\u00E1\ true\ significa\ que\ a\ porta\ est\u00E1\ aberta,\r\n\ se\ est\u00E1\ false,\ a\ porta\ est\u00E1\ fechada.\r\n\ \r\n
+comment2.params=
+comment2.target=boolean\ getPorta()
+numComments=3

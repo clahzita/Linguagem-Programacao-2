@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AmPmDisplay()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ AmPmDisplay.\r\n\ Set\ value\ as\ "AM".\r\n
+comment1.params=acronym
+comment1.target=AmPmDisplay(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getAcronym()
+comment2.text=\r\n\ Return\ the\ current\ value.\r\n
+comment3.params=replacementAcronym
+comment3.target=void\ setAcronym(java.lang.String)
+comment3.text=\r\n\ Set\ the\ value\ of\ the\ display\ to\ the\ new\ specified\ value.\ If\ the\ new\r\n\ value\ is\ diferent\ of\ "AM"\ or\ "PM",\ do\ nothing.\r\n
+comment4.params=hour
+comment4.target=java.lang.String\ getAmPMDisplay(int)
+numComments=5

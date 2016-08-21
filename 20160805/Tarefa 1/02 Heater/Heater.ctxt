@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=max\ min
+comment0.target=Heater(int,\ int)
+comment0.text=\r\n\ COnstrutor\ para\ objetos\ da\ classe\ Heater\r\n
+comment1.params=
+comment1.target=int\ getTemperature()
+comment1.text=\r\n\ M\u00E9todo\ de\ acesso\ que\ retorna\ o\ valor\ de\ temperature\r\n\ \r\n\ @return\ \ \ \ \ o\ valor\ de\ temperature\r\n
+comment2.params=increment
+comment2.target=void\ setIncrement(int)
+comment3.params=
+comment3.target=void\ warmer()
+comment3.text=\r\n\ M\u00E9todo\ que\ altera\ o\ valor\ de\ temperatura\ para\ cima.\r\n
+comment4.params=
+comment4.target=void\ cooler()
+comment4.text=\r\n\ M\u00E9todo\ que\ altera\ o\ valor\ de\ temperatura\ para\ baixo\r\n\ \r\n
+numComments=5
