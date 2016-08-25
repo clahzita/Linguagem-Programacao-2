@@ -1,5 +1,7 @@
 import java.util.Random;
 import java.time.LocalTime;
+import java.util.Locale;
+import java.text.NumberFormat;
 
 public class Produto{
     private String nome;
@@ -45,11 +47,22 @@ public class Produto{
         return codigoProduto;
     }
 
-    public String getHora(){
-        return this.hora.toString();
+    public LocalTime getHora(){
+        return this.hora;
     }
 
-    
+    public void imprimir (){
+        Locale l = new Locale("pt","BR");
+        NumberFormat real = NumberFormat.getCurrencyInstance(l);
+
+        System.out.printf("%s\nNome: %s Qtde: %d Valor: %s\nHora Entrada: %s",
+                    this.codigoProduto,
+                    this.nome,
+                    this.quantidade,
+                    real.format(this.preco),
+                    this.hora.toString()
+                    );
+    }
 
 
 }

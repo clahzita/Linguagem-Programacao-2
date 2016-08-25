@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 
+
 public class Solicitacao{
     private Usuario usuario;
     private Produto produto;
@@ -10,7 +11,7 @@ public class Solicitacao{
         this.usuario = new Usuario();
         this.usuario = usuario;
         this.produto = produto;
-        this.quantidade = quantidade;
+        this.produto.setQuantidade(quantidade);
         this.dataSolicitacao = LocalDate.now();
     }
 
@@ -18,7 +19,14 @@ public class Solicitacao{
         return usuario.getNome();
     }
 
-    public String getProduto{
+    public String getProduto(){
         return produto.getNome();
+    }
+
+    public void imprimir(){
+        System.out.println("Usuario: "+this.usuario.getNome()+" CPF: "+usuario.getCpf());
+        System.out.println("Produto : \n");
+        this.produto.imprimir();
+        System.out.println("Solicitado em: "+this.dataSolicitacao.toString());
     }
 }
