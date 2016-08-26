@@ -25,7 +25,7 @@ public class Solicitacao{
 
     public void imprimir(){
         System.out.println("Usuario: "+this.usuario.getNome()+" CPF: "+usuario.getCpf());
-        System.out.println("Produto : \n");
+        System.out.println("Produto :");
         this.produto.imprimir();
         System.out.println("Solicitado em: "+this.dataSolicitacao.toString());
     }

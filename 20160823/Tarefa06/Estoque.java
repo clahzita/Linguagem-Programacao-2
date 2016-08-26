@@ -33,6 +33,7 @@ public class Estoque{
     }
     
     public void listProdutos(){
+        System.out.println(" LISTA DE PRODUTOS EM ESTOQUE ");
         for(Produto produto: produtos){
             produto.imprimir();
         }
@@ -56,6 +57,7 @@ public class Estoque{
     }
 
     public void listSolicitacoes(){
+        System.out.println(" LISTA DE SOLICITAÇÕES ");
         for(Solicitacao solicitacao: solicitacoes){
             solicitacao.imprimir();
         }
@@ -63,20 +65,20 @@ public class Estoque{
     }
 
     public void buscarProdutos(String nomeProduto){
-        Iterator<Produto> it = produtos.iterator();
+        
         Boolean encontrado = false;
+
+        Iterator<Produto> it = produtos.iterator();
         
         Locale l = new Locale("pt","BR");
         NumberFormat real = NumberFormat.getCurrencyInstance(l);
-
+        
         while (it.hasNext()) {
-            if( nomeProduto.equals( it.next().getNome() ) ){
-                
-                String msg = "Informações sobre o Produto: "+it.next().getCodigoProduto()+
-                           "\n Nome: "+ it.next().getNome()+" Qtde: "+it.next().getQuantidade()+"\nPreço: "+ real.format(it.next().getPreco());
-                
+            Produto iter = it.next();
+            if( nomeProduto.equals( iter.getNome() ) ){ 
+                String msg = "Produto "+iter.getNome()+" encontrado! \nCód:"+iter.getCodigoProduto()+
+                                "\n Valor: "+iter.getPreco()+" Qtde: "+iter.getQuantidade();
                 JOptionPane.showMessageDialog(null, msg);
-                
                 encontrado = true;
                     
             }

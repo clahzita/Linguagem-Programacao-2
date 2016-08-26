@@ -2,6 +2,9 @@ import java.util.Random;
 import java.time.LocalTime;
 import java.util.Locale;
 import java.text.NumberFormat;
+import java.text.DateFormat;
+import java.time.format.DateTimeFormatter;
+
 
 public class Produto{
     private String nome;
@@ -51,18 +54,21 @@ public class Produto{
         return this.hora;
     }
 
-    public void imprimir (){
+    public void imprimir(){
         Locale l = new Locale("pt","BR");
         NumberFormat real = NumberFormat.getCurrencyInstance(l);
+        
 
-        System.out.printf("%s\nNome: %s Qtde: %d Valor: %s\nHora Entrada: %s",
+        System.out.printf("\nCód.: %s\nNome: %s \nQtde: %d Valor: %s\nHora Entrada: %s\n",
                     this.codigoProduto,
                     this.nome,
                     this.quantidade,
                     real.format(this.preco),
-                    this.hora.toString()
+                    this.hora.toString().substring(0,this.hora.toString().length()-4)
                     );
+        System.out.printf("\n");
     }
+        
 
 
 }
