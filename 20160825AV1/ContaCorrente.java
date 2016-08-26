@@ -4,7 +4,7 @@ import java.util.Random;
 public class ContaCorrente{
     private double saldo;
     private String numeroConta;
-    private int numeroSequencial = 1;
+    private static int numeroSequencial = 1;
 
     public ContaCorrente(){
         saldo = 0.0;
@@ -12,7 +12,7 @@ public class ContaCorrente{
         Random random = new Random();
         numeroConta = new String(); 
         numeroConta = ""+numeroSequencial+random.nextInt(1000);
-        numeroSequencial++;
+        ContaPoupanca.numeroSequencial+=1%10;
     }
 
     public void setSaldo(double saldo){

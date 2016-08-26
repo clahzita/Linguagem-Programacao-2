@@ -1,7 +1,9 @@
-import java.util;
+ 
+import java.util.Iterator;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import java.util.Locale;
 import java.text.NumberFormat;
-import java.util.Locale; 
-
 
 public class Banco{
     private int numeroTotalContas;
@@ -43,9 +45,10 @@ public class Banco{
 
         Iterator<ContaCorrente> iter = correntes.iterator();
 
-        for(iter.hasNext()){
-            System.out.println( "Numero da Conta: "+iter.next().getNumeroConta()+
-            " Saldo: " + nf.format( iter.next().getSaldo() ));
+        while(iter.hasNext()){
+            ContaCorrente c = iter.next();
+            System.out.println( "Numero da Conta: "+c.getNumeroConta()+
+            " Saldo: " + nf.format( c.getSaldo() ));
         }
 
     }
@@ -54,11 +57,12 @@ public class Banco{
         Locale l = new Locale("pt","BR");
         NumberFormat nf = NumberFormat.getCurrencyInstance(l);
 
-        Iterator<ContaPoupanca> iter = correntes.iterator();
+        Iterator<ContaPoupanca> iter = poupancas.iterator();
 
-        for(iter.hasNext()){
-            System.out.println( "Numero da Conta: "+iter.next().getNumeroConta()+
-            " Saldo: " + nf.format( iter.next().getSaldo() ));
+        while(iter.hasNext()){
+            ContaPoupanca c = iter.next();
+            System.out.println( "Numero da Conta: "+c.getNumeroConta()+
+            " Saldo: " + nf.format( c.getSaldo() ));
         }
 
     }
@@ -67,17 +71,18 @@ public class Banco{
         Locale l = new Locale("pt","BR");
         NumberFormat nf = NumberFormat.getCurrencyInstance(l);
 
-        Iterator<ContaInvestimento> iter = correntes.iterator();
+        Iterator<ContaInvestimento> iter = investimentos.iterator();
 
-        for( iter.hasNext() ){
-
-            System.out.println( "Numero da Conta: "+iter.next().getNumeroConta()+
-            " Saldo: " + nf.format( iter.next().getSaldo() ));
+        while(iter.hasNext()){
+            ContaInvestimento c = iter.next();
+            System.out.println( "\nNumero da Conta: "+c.getNumeroConta()+
+            " Saldo: " + nf.format( c.getSaldo() )+"\n");
         }
 
     }
 
     public void listaTodasContas (String numeroConta, double saldoConta){
+        System.out.println("Lista de Todas as Contas Bancárias:");
         this.listaContaCorrente();
         this.listaPoupanca();
         this.listaContaInvestimento();

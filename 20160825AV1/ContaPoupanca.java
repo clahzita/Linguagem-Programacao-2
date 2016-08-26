@@ -4,21 +4,21 @@ import java.util.Random;
 public class ContaPoupanca{
     private double saldo;
     private String numeroConta;
-    private int numeroSequencial = 1;
+    private static int numeroSequencial = 1;
     private boolean primeiroDeposito;
 
 
     public ContaPoupanca(){
 
         this.saldo = 200.0;
-        this.rendimentosMensais();
+        ContaPoupanca.rendimentosMensais();
         
         this.primeiroDeposito = true;
 
         Random random = new Random();
         this.numeroConta = new String(); 
         this.numeroConta = ""+(numeroSequencial+random.nextInt(1000));
-        numeroSequencial++;
+        ContaPoupanca.numeroSequencial+=1%10;
     }
 
     public void setSaldo(double saldo){
@@ -72,7 +72,7 @@ public class ContaPoupanca{
         contaDestino.sacar(valor);
     }
 
-    private void rendimentosMensais(){
+    private static void rendimentosMensais(){
 
         this.saldo *= 0.05;
 
