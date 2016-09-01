@@ -1,0 +1,9 @@
+
+public class Automovel extends Veiculo {
+
+	public Automovel(boolean ligado) {
+		super(ligado);
+		// TODO Auto-generated constructor stub
+	}
+
+}

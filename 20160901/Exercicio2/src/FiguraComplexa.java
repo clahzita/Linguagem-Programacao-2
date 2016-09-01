@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+public class FiguraComplexa extends Figura {
+	private ArrayList<Figura> figuras = new ArrayList<Figura>();
+
+	public FiguraComplexa(ArrayList<Figura> figuras) {
+		this.figuras = figuras;
+	}
+	
+	@Override
+	public double calcularArea() {
+		double area = 0.0;
+		for(Figura x: figuras){
+			area+=x.calcularArea();
+		}
+		return area;
+	}
+	
+	
+	
+}

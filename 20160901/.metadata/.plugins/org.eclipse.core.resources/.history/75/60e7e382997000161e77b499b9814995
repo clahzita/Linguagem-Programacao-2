@@ -1,0 +1,9 @@
+
+public class Onibus extends Veiculo {
+
+	public Onibus(boolean ligado) {
+		super(ligado);
+		// TODO Auto-generated constructor stub
+	}
+
+}

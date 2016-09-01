@@ -1,0 +1,8 @@
+
+public class Ponto3D {
+
+	public Ponto3D() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
