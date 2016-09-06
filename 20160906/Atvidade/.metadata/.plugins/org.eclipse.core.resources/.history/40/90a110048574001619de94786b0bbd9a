@@ -1,0 +1,8 @@
+
+public class Moeda extends Item {
+
+	public Moeda() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

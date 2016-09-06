@@ -1,0 +1,8 @@
+
+public class Diamante extends Item {
+
+	public Diamante() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

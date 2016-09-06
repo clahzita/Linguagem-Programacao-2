@@ -1,0 +1,8 @@
+
+public class Maca extends Item {
+
+	public Maca() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,8 @@
+
+public class Cogumelo extends Item {
+
+	public Cogumelo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
