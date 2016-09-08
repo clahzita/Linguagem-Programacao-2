@@ -1,0 +1,11 @@
+
+public class Quadrado implements AreaCalculavel {
+	private double lado;
+	
+	@Override
+	public double calcularArea() {	
+		return lado*lado;
+	}
+	
+
+}

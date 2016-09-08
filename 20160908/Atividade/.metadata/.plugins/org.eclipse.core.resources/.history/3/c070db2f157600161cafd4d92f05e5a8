@@ -1,0 +1,14 @@
+
+public class ContaInvestimento extends ContaBancaria {
+
+	public ContaInvestimento() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calcularSaldo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

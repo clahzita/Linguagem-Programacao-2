@@ -1,0 +1,13 @@
+
+public class Aplicacao {
+
+	public static void main(String[] args) throws Exception {
+		Porta porta1 = new Porta(2.1, 0,9);
+		
+		porta1.abrir();
+		
+		Porta porta2 = (Porta) porta1.clone();
+
+	}
+
+}

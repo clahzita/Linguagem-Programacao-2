@@ -1,0 +1,13 @@
+
+public class aplicacao {
+
+	public static void main(String[] args) {
+		ContaBancaria cc = new ContaCorrente();
+		ContaBancaria ci = new ContaInvestimento();
+		
+		cc.depositar(550.00);
+		System.out.println(cc.getSaldo());
+
+	}
+
+}

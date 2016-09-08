@@ -1,0 +1,13 @@
+
+public class ContaCorrente extends ContaBancaria {
+
+	public ContaCorrente() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double calcularSaldo() {
+		return super.saldo*0.9;
+	}
+
+}
