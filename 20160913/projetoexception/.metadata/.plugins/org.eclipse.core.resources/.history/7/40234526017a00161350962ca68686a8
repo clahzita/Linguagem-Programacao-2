@@ -1,0 +1,28 @@
+package exemplo1;
+
+public class ContaBancaria {
+	private double saldo;
+
+	public ContaBancaria(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public void sacar(double valor) throws Exception{
+		if(valor<0){
+			trhows new Exception("O valor para o saque é negativo!");
+		}
+		
+		if(saldo-valor<0){
+			trhows new Exception("O saldo é insuficiente!");
+		}
+		
+		this.saldo-=valor;
+	}
+	
+	public double getSaldo(){
+		return saldo;
+	}
+	
+	
+
+}

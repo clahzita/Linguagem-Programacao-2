@@ -1,0 +1,11 @@
+package exemplo1;
+
+public class Banco {
+	public void realizarOperacao() throws Exception{
+		ContaBancaria c = new ContaBancaria(1000);
+		c.sacar(1000);
+		System.out.println("Sucesso");
+		
+	}
+
+}

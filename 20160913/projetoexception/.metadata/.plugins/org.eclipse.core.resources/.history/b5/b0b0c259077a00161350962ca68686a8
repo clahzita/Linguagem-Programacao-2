@@ -1,0 +1,28 @@
+package exemplo2;
+
+
+public class Principal {
+
+	public static void main(String[] args){
+		
+		Banco b = new Banco();
+		
+		try {
+			b.realizarOperacao();
+		} catch (SaldoInsuficienteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ValorNegativoException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package exemplo2;
+
+
+public class Banco {
+	public void realizarOperacao() throws SaldoInsuficienteException, ValorNegativoException, Exception{
+		ContaBancaria c = new ContaBancaria(1000);
+		c.sacar(1000);
+		System.out.println("Sucesso");
+		
+	}
+
+}

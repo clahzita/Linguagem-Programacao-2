@@ -1,0 +1,24 @@
+package exemplo2;
+
+
+public class Principal {
+
+	public static void main(String[] args){
+		
+		Banco b = new Banco();
+		
+		try {
+			b.realizarOperacao();
+		} catch (SaldoInsuficienteException e) {
+			System.out.println("Você tentou sacar"+e.getValor()+", mas só tem de saldo "+e.getSaldo());
+		} catch (ValorNegativoException e) {
+			System.out.println("Você tentou realizar um saque com valor negativo de: "+e.getValor);
+			
+		}
+		
+		
+		
+
+	}
+
+}

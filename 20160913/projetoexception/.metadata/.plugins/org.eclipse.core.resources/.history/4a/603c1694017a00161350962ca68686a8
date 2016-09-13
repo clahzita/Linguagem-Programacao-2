@@ -1,0 +1,17 @@
+package exemplo1;
+
+public class Principal {
+
+	public static void main(String[] args) throws Exception {
+		// TODO Auto-generated method stub
+		ContaBancaria c = new ContaBancaria(1000);
+		try{
+			c.sacar(-100);
+		}catch(Exception e){
+			System.out.println("Ocorreu um erro!"+c.getMessage());
+		}
+		
+
+	}
+
+}
