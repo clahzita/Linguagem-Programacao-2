@@ -1,0 +1,8 @@
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		ContatoPF c1 = new ContatoPF();
+		
+	}
+}

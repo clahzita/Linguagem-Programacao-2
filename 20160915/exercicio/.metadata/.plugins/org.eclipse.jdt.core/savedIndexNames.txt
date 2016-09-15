@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+/home/IMD.LOCAL/clah/Documentos/Linguagem-Programacao-2/20160915/exercicio/.metadata/.plugins/org.eclipse.jdt.core
+1827369212.index
+346835924.index
