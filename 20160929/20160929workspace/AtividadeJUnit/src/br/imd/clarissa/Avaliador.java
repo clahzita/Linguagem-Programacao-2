@@ -1,0 +1,21 @@
+package br.imd.clarissa;
+
+import java.lang.Double;
+
+public class Avaliador {
+	public static final double NEGATIVE_INFINITY;
+	private double maiorDeTodos = NEGATIVE_INFINITY;
+	public static final double POSITIVE_INFINITY;
+	private double menorDeTodos = POSITIVE_INFINITY;
+	
+	public void avalia(Leilao leilao){
+		for(Lance lance : leilao.getLances()){
+			if(lance.getValor() > maiorDeTodos){
+				maiorDeTodos = lance.getValor();
+			}
+			else if(lance.getValor()< menorDeTodos){
+				menorDeTodos = lance.getValor();
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+package imd.clarissa.teste;
+
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.imd.clarissa.Matematica;
+
+public class MatematicaTest {
+	Matematica m; 
+	
+	@Before
+	public void setUp() throws Exception {
+		m = new Matematica();
+	
+	}
+
+	@Test
+	public void testSomar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testSubtrair() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testMultiplicar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testDividir() {
+		fail("Not yet implemented");
+	}
+
+}
