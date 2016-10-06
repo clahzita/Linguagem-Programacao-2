@@ -1,0 +1,10 @@
+package br.imd.repositorio;
+
+public interface IRepositorio {
+	
+	void inserirFuncionario(Funcionario f);
+	void deletarFuncionario(String matricula);
+	void atualizarFuncionario(int matricula);
+	Funcionario buscarFuncionario(int matricula);
+	void listarFuncionarios();
+}
