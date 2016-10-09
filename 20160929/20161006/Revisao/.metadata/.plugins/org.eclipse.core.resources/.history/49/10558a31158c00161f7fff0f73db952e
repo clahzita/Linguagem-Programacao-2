@@ -1,5 +1,0 @@
-package br.imd.repositorio;
-
-public interface IRepositorio {
-
-}

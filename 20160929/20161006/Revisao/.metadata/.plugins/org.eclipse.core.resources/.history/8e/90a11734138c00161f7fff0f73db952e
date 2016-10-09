@@ -1,7 +1,0 @@
-package br.imd.funcionario;
-
-public class Diretor extends Funcionario {
-
-	
-
-}

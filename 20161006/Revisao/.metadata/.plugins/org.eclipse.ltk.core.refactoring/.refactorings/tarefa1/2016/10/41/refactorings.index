@@ -1,0 +1,5 @@
+1475792113417	Encapsulate field 'CPF'
+1475792127584	Encapsulate field 'nome'
+1475792156377	Encapsulate field 'matricula'
+1475793140122	Move compilation unit
+1475793293249	Rename package 'br.imd.clarissa'
