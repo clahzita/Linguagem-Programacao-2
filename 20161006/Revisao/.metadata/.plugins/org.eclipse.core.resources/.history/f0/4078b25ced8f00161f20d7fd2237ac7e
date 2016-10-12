@@ -1,0 +1,61 @@
+package br.imd.repositorio;
+
+
+import br.imd.funcionario.Funcionario;
+
+public class RepositorioFuncionario implements IRepositorio {
+	private Repositorio banco;
+	
+	
+public RepositorioFuncionario() {
+		
+		this.banco = new Repositorio();
+	}
+
+	@Override
+	public void inserirFuncionario(Funcionario f) {
+		banco.getBanco().add(f);
+		
+	}
+
+	@Override
+	public void deletarFuncionario(String matricula){
+		
+		for(Funcionario f: banco.getBanco()){
+			if(f.getMatricula() == matricula){
+				banco.getBanco().remove(f);
+				            
+			}
+		}
+	}
+
+	@Override
+	public void atualizarFuncionario(String matricula, String CPFCorreto) {
+		for(Funcionario f: banco.getBanco()){
+			if(f.getMatricula() == matricula){
+				f.setCPF(CPFCorreto);         
+			}
+		}
+
+	}
+
+	@Override
+	public Funcionario buscarFuncionario(String matricula) {
+		
+		for(Funcionario f: banco.getBanco()){
+			if(f.getMatricula() == matricula){
+				return f;         
+			}
+		}
+		return null;
+	}
+
+	@Override
+	public void listarFuncionarios() {
+		for(Funcionario f: banco.getBanco()){
+			System.out.println("Nome: "+f.getNome()+" Mat.: "+f.getMatricula());
+		}	
+
+	}
+
+}

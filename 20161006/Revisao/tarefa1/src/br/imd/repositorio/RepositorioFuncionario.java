@@ -1,15 +1,31 @@
 package br.imd.repositorio;
 
+
 import br.imd.funcionario.Funcionario;
 
 public class RepositorioFuncionario implements IRepositorio {
+	private static Repositorio banco;
 	
-	private Repositorio banco;
 	
-	public RepositorioFuncionario() {
-		
-		this.banco = new Repositorio();
+	public RepositorioFuncionario(){
+		if(banco == null){
+			RepositorioFuncionario.banco = new Repositorio();
+		}		
 	}
+	
+	
+
+	public Repositorio getBanco() {
+		return banco;
+	}
+
+
+
+	public static void setBanco(Repositorio banco) {
+		RepositorioFuncionario.banco = banco;
+	}
+
+
 
 	@Override
 	public void inserirFuncionario(Funcionario f) {
@@ -53,9 +69,7 @@ public class RepositorioFuncionario implements IRepositorio {
 	public void listarFuncionarios() {
 		for(Funcionario f: banco.getBanco()){
 			System.out.println("Nome: "+f.getNome()+" Mat.: "+f.getMatricula());
-		}
-		
-		
+		}	
 
 	}
 

@@ -1,0 +1,15 @@
+package br.imd;
+
+public class Fornecedor {
+	
+	private String nome;
+	private String senha;
+	private String cidade;
+	
+	public Cliente(String nome, String senha, String cidade) {
+		super();
+		this.nome = nome;
+		this.senha = senha;
+		this.cidade = cidade;
+	}
+}

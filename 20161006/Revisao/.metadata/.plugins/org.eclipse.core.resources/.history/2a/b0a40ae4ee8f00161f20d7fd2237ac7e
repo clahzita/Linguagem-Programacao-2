@@ -1,0 +1,7 @@
+package br.imd;
+
+public class UsuarioAutenticavel {
+	private String nome;
+	private String senha;
+	
+}

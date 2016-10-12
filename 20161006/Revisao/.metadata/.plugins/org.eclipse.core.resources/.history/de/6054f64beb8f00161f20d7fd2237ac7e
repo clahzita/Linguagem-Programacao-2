@@ -1,0 +1,22 @@
+package br.imd.repositorio;
+
+public class Repositorio{
+	private static RepositorioFuncionario repositorio = null;
+	
+	public static RepositorioFuncionario getInstance() {
+		if(repositorio == null){
+			repositorio = new RepositorioFuncionario();
+		}
+		return repositorio;
+	}
+
+	public RepositorioFuncionario getBanco() {
+		return Repositorio.repositorio;
+	}
+
+	public void setBanco(RepositorioFuncionario repositorio) {
+		Repositorio.repositorio = repositorio;
+	}
+	
+	
+}

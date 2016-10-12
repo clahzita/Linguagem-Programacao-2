@@ -1,16 +1,18 @@
 package br.imd.repositorio;
-import br.imd.funcionario.Funcionario;
 import java.util.ArrayList;
 
+import br.imd.funcionario.Funcionario;
+
 public class Repositorio{
-	ArrayList<Funcionario> banco;
+	private ArrayList<Funcionario> banco = null;
 	
+
 	public Repositorio() {
-		banco = new ArrayList<Funcionario>();
+		this.banco = new ArrayList<Funcionario>();
 	}
 
 	public ArrayList<Funcionario> getBanco() {
-		return banco;
+		return this.banco;
 	}
 
 	public void setBanco(ArrayList<Funcionario> banco) {

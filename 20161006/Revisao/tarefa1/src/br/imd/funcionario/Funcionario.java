@@ -1,9 +1,9 @@
 package br.imd.funcionario;
 
-public class Funcionario {
-	private String matricula;
-	private String nome;
-	private String CPF;
+abstract public class Funcionario {
+	protected String matricula;
+	protected String nome;
+	protected String CPF;
 	
 	
 	

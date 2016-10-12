@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.imd.funcionario.Gerente"/>
+<fullyQualifiedTypeName name="br.imd.funcionario.Secretario"/>
+<fullyQualifiedTypeName name="br.imd.funcionario.Diretor"/>
+<fullyQualifiedTypeName name="br.imd.funcionario.AuxiliarAdministrativo"/>
+<fullyQualifiedTypeName name="br.imd.repositorio.Repositorio"/>
 <fullyQualifiedTypeName name="br.imd.funcionario.Funcionario"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.imd.repositorio.RepositorioFuncionario"/>
 </qualifiedTypeNameHistroy>
