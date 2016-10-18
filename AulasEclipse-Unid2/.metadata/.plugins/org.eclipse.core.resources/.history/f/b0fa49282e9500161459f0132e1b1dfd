@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+
+/**
+ * @author clarissa
+ *
+ */
+public class ContaCorrente extends ContaBancaria {
+
+	/**
+	 * @param saldo
+	 */
+	public ContaCorrente(double saldo) {
+		super(saldo);
+		// TODO Auto-generated constructor stub
+	}
+
+	/* (non-Javadoc)
+	 * @see ContaBancaria#calcularSaldo()
+	 */
+	@Override
+	public void calcularSaldo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

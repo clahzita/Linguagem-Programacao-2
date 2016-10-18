@@ -1,0 +1,17 @@
+package br.imd.clarissa.exceptions;
+
+public class SaldoInsuficienteException extends Exception {
+
+	@Override
+	public String getMessage() {
+		// TODO Auto-generated method stub
+		return "lala";
+	}
+	
+	public SaldoInsuficienteException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

@@ -1,0 +1,29 @@
+package br.imd.clarissa.exceptions;
+
+public class SacarException extends Exception {
+
+	public SacarException() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public SacarException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SacarException(Throwable cause) {
+		super(cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SacarException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public SacarException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+		// TODO Auto-generated constructor stub
+	}
+
+}

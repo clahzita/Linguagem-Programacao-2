@@ -1,0 +1,17 @@
+package br.imd.clarissa.exceptions;
+
+public class SacarException extends Exception {
+
+
+	public ValorNegativoSacarException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public SaldoInsuficienteSacarException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="br.imd.funcionario.AuxiliarAdministrativo"/>
 <fullyQualifiedTypeName name="br.imd.funcionario.Diretor"/>
 <fullyQualifiedTypeName name="br.imd.repositorio.RepositorioFuncionario"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.entidades.Porta"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.exceptions.SaldoInsuficienteException"/>
 </qualifiedTypeNameHistroy>

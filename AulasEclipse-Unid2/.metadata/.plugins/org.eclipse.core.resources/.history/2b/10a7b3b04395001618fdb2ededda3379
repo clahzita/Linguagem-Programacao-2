@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+
+/**
+ * @author clarissa
+ *
+ */
+public class Quadrado implements AreaCalculavel {
+	
+	
+
+}

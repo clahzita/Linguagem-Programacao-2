@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package br.imd.clarissa.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Porta implements Cloneable {
+	private double altura;
+	private double largura;
+	private boolean aberta;
+
+}

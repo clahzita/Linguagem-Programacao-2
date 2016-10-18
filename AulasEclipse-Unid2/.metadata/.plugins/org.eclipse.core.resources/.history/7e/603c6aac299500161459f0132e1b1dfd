@@ -1,0 +1,17 @@
+
+public abstract class ContaBancaria {
+	private double saldo;
+	
+	public void depositar(double deposito){
+		
+	}
+	
+	public void sacar(double valor){
+		
+	}
+	
+	public void transferir(double valor, ContaBancaria conta){
+		
+	}
+	
+}

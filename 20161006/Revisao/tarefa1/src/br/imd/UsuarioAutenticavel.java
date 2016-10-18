@@ -1,11 +1,19 @@
 package br.imd;
 
-abstract class UsuarioAutenticavel {
+public abstract class UsuarioAutenticavel {
 	private String nome;
 	private int senha;
 	
-	public boolean autentica(int senha){
+	
+	
+	public UsuarioAutenticavel(String nome, int senha) {
 		
+		this.nome = nome;
+		this.senha = senha;
+	}
+
+	public boolean autentica(int senha){
+		return true;
 	}
 	
 }

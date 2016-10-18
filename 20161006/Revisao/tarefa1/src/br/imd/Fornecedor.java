@@ -2,14 +2,11 @@ package br.imd;
 
 public class Fornecedor extends UsuarioAutenticavel {
 	
-	private String nome;
-	private String senha;
 	private String cidade;
 	
-	public Fornecedor(String nome, String senha, String cidade) {
-
-		this.nome = nome;
-		this.senha = senha;
+	public Fornecedor(String nome, int senha, String cidade) {
+		super(nome,senha);
+		
 		this.cidade = cidade;
 	}
 }

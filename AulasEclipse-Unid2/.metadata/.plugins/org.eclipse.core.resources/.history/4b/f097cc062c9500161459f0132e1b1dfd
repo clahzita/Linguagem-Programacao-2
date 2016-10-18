@@ -1,0 +1,22 @@
+
+public abstract class ContaBancaria {
+	private double saldo;
+	
+	public void depositar(double valor){
+		this.saldo += valor;
+	}
+	
+	public void sacar(double valor) throws SacarException{
+		try{
+			
+		}
+		catch(){
+			
+		}
+	}
+	
+	public void transferir(double valor, ContaBancaria conta){
+		
+	}
+	
+}

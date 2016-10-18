@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+/**
+ * @author clarissa
+ * @version 1.0
+ */
+public interface AreaCalculavel {
+	public double calcularArea();
+}

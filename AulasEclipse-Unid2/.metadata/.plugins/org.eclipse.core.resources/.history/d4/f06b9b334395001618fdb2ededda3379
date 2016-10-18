@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+
+/**
+ * @author clarissa
+ *
+ */
+public interface AreaCalculavel {
+
+}

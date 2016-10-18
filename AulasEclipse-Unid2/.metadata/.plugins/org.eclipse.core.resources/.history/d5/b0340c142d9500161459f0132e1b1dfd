@@ -1,0 +1,12 @@
+package br.imd.clarissa.exceptions;
+
+public class SacarException extends Exception {
+
+
+	public SacarException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+
+}

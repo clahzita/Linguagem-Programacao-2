@@ -1,0 +1,21 @@
+package br.imd.clarissa;
+
+import br.imd.clarissa.entidades.ContaBancaria;
+import br.imd.clarissa.entidades.ContaCorrente;
+import br.imd.clarissa.entidades.ContaInvestimento;
+import br.imd.clarissa.exceptions.SaldoInsuficienteException;
+
+public class Aplicacao {
+
+	public static void main(String[] args){
+		ContaBancaria investtimento = new ContaInvestimento(500);
+		ContaBancaria contaCorrente = new ContaCorrente(200);
+		
+		
+		
+		System.out.println(contaInvestimento.getSaldo());
+		
+
+	}
+
+}

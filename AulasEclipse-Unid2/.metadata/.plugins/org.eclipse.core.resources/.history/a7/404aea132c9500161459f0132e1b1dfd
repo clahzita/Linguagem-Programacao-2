@@ -1,0 +1,28 @@
+
+public abstract class ContaBancaria {
+	private double saldo;
+	
+	public void depositar(double valor){
+		if(valor < 0){
+			throws new IllegalArgumentException("Você digitou um valor inválido");
+		}
+		else{
+			this.saldo += valor;
+		}
+		
+	}
+	
+	public void sacar(double valor) throws SacarException{
+		try{
+			
+		}
+		catch(){
+			
+		}
+	}
+	
+	public void transferir(double valor, ContaBancaria conta){
+		
+	}
+	
+}
