@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package br.imd.clarissa.dao;
+
+import br.imd.clarissa.banco.Repositorio;
+import br.imd.clarissa.entidades.Moto;
+
+/**
+ * @author clarissa
+ *
+ */
+public class MotoDao implements GenericDao<Moto> {
+
+	@Override
+	public void inserir(Moto novo) {
+		Repositorio.getBanco().add(novo);
+		
+	}
+
+	@Override
+	public void excluir(Moto novo) {
+		Repositorio.getBanco().remove(novo);
+		
+	}
+
+	@Override
+	public void listarTodos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

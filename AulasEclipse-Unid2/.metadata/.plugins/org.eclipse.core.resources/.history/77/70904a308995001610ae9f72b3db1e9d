@@ -1,0 +1,11 @@
+package br.imd.clarissa.entidades;
+
+import java.util.Date;
+
+public class Aluguel {
+	private Date dataAluguel;
+	private Date dataDevolucao;
+	private double valorPgto;
+	
+	
+}

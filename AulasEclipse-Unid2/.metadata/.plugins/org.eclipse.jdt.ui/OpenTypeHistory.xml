@@ -2,5 +2,7 @@
 <typeInfoHistroy>
 <typeInfo handle="=AbstractClassAndInterface03/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.util.regex(Pattern$CharPropertyNames$CloneableProperty.class[CloneableProperty" modifiers="1034" timestamp="1469838253000"/>
 <typeInfo handle="=AbstractClassAndInterface03/\/usr\/lib\/jvm\/java-8-oracle\/jre\/lib\/rt.jar&lt;java.lang(Cloneable.class[Cloneable" modifiers="1537" timestamp="1469838253000"/>
-<typeInfo handle="=AbstractClassAndInterface01/src&lt;{AreaCalculavel.java[AreaCalculavel" modifiers="513" timestamp="1476802819000"/>
+<typeInfo handle="=AbstractClassAndInterface01/src&lt;{AreaCalculavel.java[AreaCalculavel" modifiers="513" timestamp="1476827959000"/>
+<typeInfo handle="=20161018_Revisao02/src&lt;br.imd.clarissa.entidades{Veiculo.java[Veiculo" modifiers="1025" timestamp="1476828509000"/>
+<typeInfo handle="=20161018_Revisao02/src&lt;br.imd.clarissa.dao{GenericDao.java[GenericDao" modifiers="513" timestamp="1476830265000"/>
 </typeInfoHistroy>

@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+package br.imd.clarissa.dao;
+
+import br.imd.clarissa.banco.Repositorio;
+import br.imd.clarissa.entidades.Carro;
+import br.imd.clarissa.entidades.Veiculo;
+
+/**
+ * @author clarissa
+ *
+ */
+public class CarroDao implements GenericDao<Carro> {
+
+	/* (non-Javadoc)
+	 * @see br.imd.clarissa.dao.GenericDao#inserir(br.imd.clarissa.entidades.Veiculo)
+	 */
+	@Override
+	public void inserir(Carro novo) {
+		Repositorio.getInstance().getBanco().add(novo);
+
+	}
+
+	/* (non-Javadoc)
+	 * @see br.imd.clarissa.dao.GenericDao#excluir(br.imd.clarissa.entidades.Veiculo)
+	 */
+	@Override
+	public void excluir(Carro novo) {
+		// TODO Auto-generated method stub
+
+	}
+
+	/* (non-Javadoc)
+	 * @see br.imd.clarissa.dao.GenericDao#listarTodos()
+	 */
+	@Override
+	public void listarTodos() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

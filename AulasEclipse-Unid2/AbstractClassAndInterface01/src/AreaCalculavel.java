@@ -12,4 +12,5 @@ public interface AreaCalculavel {
 	 * @return Retorna o valor da área de uma figura geométrica;
 	 */
 	public double calcularArea();
+	
 }

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package br.imd.clarissa.dao;
+
+/**
+ * @author clarissa
+ *
+ */
+public class MotoDao implements GenericDao<V> {
+
+}

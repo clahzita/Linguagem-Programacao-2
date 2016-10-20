@@ -1,0 +1,5 @@
+package br.imd.clarissa.entidades;
+
+public class Cliente {
+
+}

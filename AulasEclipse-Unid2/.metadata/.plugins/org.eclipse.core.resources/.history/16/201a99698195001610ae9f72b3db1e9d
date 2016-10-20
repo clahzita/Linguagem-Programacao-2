@@ -1,0 +1,16 @@
+package br.imd.clarissa.banco;
+
+import java.util.ArrayList;
+
+import br.imd.clarissa.entidades.Veiculo;
+
+public class Banco {
+	private ArrayList<Veiculo> repositorio = new ArrayList<Veiculo>();
+	private static Banco banco = new Banco();
+	
+	private Banco(){}
+	
+	public 
+	
+
+}

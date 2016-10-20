@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package br.imd.clarissa.dao;
+
+import br.imd.clarissa.entidades.Moto;
+
+/**
+ * @author clarissa
+ *
+ */
+public class MotoDao implements GenericDao<Moto> {
+
+	@Override
+	public void inserir(Moto novo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void excluir(Moto novo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void listarTodos() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

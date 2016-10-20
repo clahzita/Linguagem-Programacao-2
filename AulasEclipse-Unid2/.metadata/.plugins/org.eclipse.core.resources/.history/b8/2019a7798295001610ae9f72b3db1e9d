@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package br.imd.clarissa.dao;
+
+/**
+ * @author clarissa
+ * @version 1.0
+ */
+public interface GenericDao {
+	
+	void inserir(Veiculo novo);
+	void excluir(Veiculo novo);
+
+}
