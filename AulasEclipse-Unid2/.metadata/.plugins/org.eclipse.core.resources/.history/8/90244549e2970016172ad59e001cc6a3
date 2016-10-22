@@ -1,0 +1,14 @@
+package br.imd.clarissa;
+
+import br.imd.clarissa.entidades.Moto;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		Veiculo moto1 = new Moto("Yamaha", "YBR", true, 125);
+		Veiculo moto1 = new Moto("Honda", "CG", true, 150);
+		
+
+	}
+
+}

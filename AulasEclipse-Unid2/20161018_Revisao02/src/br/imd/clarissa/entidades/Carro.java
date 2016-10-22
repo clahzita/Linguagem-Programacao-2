@@ -11,7 +11,7 @@ public class Carro extends Veiculo {
 	/**
 	 * Esse atributo refere-se a potência do motor do carro em cavalos
 	 */
-	private int potenciaMotor;
+	private double potenciaMotor;
 	/**
 	 * Esse atributo refere-se a quantidade de portas do carro.
 	 */
@@ -21,22 +21,27 @@ public class Carro extends Veiculo {
 	 * Método constrói um objeto carro.
 	 * @param marca
 	 * @param modelo
-	 * @param potenciaMotor
+	 * @param b
 	 * @param portas
 	 */
-	public Carro(String marca, String modelo, int potenciaMotor, int portas) {
+	public Carro(String marca, String modelo, double potenciaMotor, int portas) {
 		super(marca, modelo);
 		this.setPortas(portas);
 		this.setPotenciaMotor(potenciaMotor);
 	}
+	
+	public Carro(String modelo, double potenciaMotor) {
+		super(modelo);
+		this.setPotenciaMotor(potenciaMotor);
+	}
 
-	public int getPotenciaMotor() {
+	public double getPotenciaMotor() {
 		return potenciaMotor;
 	}
 
-	public void setPotenciaMotor(int potenciaMotor) {
-		if(potenciaMotor >= 1.0 && potenciaMotor <= 3.0){
-			this.potenciaMotor = potenciaMotor;
+	public void setPotenciaMotor(double potenciaMotor2) {
+		if(potenciaMotor2 >= 1.0 && potenciaMotor2 <= 3.0){
+			this.potenciaMotor = potenciaMotor2;
 		}
 	}
 

@@ -5,6 +5,7 @@ package br.imd.clarissa.dao;
 
 import br.imd.clarissa.banco.Repositorio;
 import br.imd.clarissa.entidades.Carro;
+import br.imd.clarissa.entidades.Moto;
 import br.imd.clarissa.entidades.Veiculo;
 
 /**
@@ -37,11 +38,16 @@ public class CarroDao implements GenericDao<Carro> {
 	@Override
 	public void listarTodos() {
 		int ordem = 1;
+		int cont = 0;
 		
 		for(Veiculo i: Repositorio.getBancoVeiculos()){
-			if(i instanceof Carro)
+			if(i instanceof Carro){
 				System.out.println(ordem+" Marca: "+i.getMarca()+" Modelo: "+i.getModelo());
-		}	
+				cont++;
+			}
+		}
+		
+		System.out.println(cont+" carro(s) cadastrado(s)!");
 
 	}
 

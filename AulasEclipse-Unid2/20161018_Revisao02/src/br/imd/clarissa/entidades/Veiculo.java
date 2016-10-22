@@ -9,6 +9,12 @@ public abstract class Veiculo {
 		this.marca = marca;
 		this.modelo = modelo;
 	}
+	
+	public Veiculo(String modelo) {
+		super();
+		this.marca = "indefinida";
+		this.modelo = modelo;
+	}
 
 	public String getMarca() {
 		return marca;

@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package br.imd.clarissa.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class ReciboAluguel {
+	private String reciboImpresso;
+	
+	
+	public String imprimirRecibo(Aluguel aluguel){
+		reciboImpresso = "#Recibo de Aluguel#\n";
+		reciboImpresso += "Modelo do Veiculo:"+aluguel.getVeiculo().getModelo()+"\n";
+		reciboImpresso += "Valor Total: R$"+aluguel.getValorPgto()+"\n";
+		
+		
+		
+		return reciboImpresso;
+		
+	}
+
+}

@@ -8,21 +8,27 @@ package br.imd.clarissa.entidades;
  *
  */
 public class Moto extends Veiculo {
-	private boolean manual;
+	private boolean partidaManual;
 	private int cilindradas;
 	
 	public Moto(String marca, String modelo, boolean manual, int cilindradas) {
 		super(marca, modelo);
-		this.manual = manual;
+		this.partidaManual = manual;
+		this.cilindradas = cilindradas;
+	}
+	
+	public Moto(String modelo, int cilindradas) {
+		super(modelo);
+		this.partidaManual = true;
 		this.cilindradas = cilindradas;
 	}
 
-	public boolean isManual() {
-		return manual;
+	public boolean isPartidaManual() {
+		return partidaManual;
 	}
 
-	public void setManual(boolean manual) {
-		this.manual = manual;
+	public void setPartidaManual(boolean partidaManual) {
+		this.partidaManual = partidaManual;
 	}
 
 	public int getCilindradas() {

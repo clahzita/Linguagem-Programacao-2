@@ -28,11 +28,16 @@ public class MotoDao implements GenericDao<Moto> {
 	@Override
 	public void listarTodos() {
 		int ordem = 1;
+		int cont = 0;
 		
 		for(Veiculo i: Repositorio.getBancoVeiculos()){
-			if(i instanceof Moto)
+			if(i instanceof Moto){
 				System.out.println(ordem+" Marca: "+i.getMarca()+" Modelo: "+i.getModelo());
-		}	
+				cont++;
+			}
+		}
+		
+		System.out.println(cont+" moto(s) cadastrada(s)!");
 		
 	}
 
