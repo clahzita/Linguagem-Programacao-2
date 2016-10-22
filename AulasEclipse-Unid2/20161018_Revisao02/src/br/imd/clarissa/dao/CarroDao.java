@@ -37,12 +37,11 @@ public class CarroDao implements GenericDao<Carro> {
 	 */
 	@Override
 	public void listarTodos() {
-		int ordem = 1;
 		int cont = 0;
 		
 		for(Veiculo i: Repositorio.getBancoVeiculos()){
 			if(i instanceof Carro){
-				System.out.println(ordem+" Marca: "+i.getMarca()+" Modelo: "+i.getModelo());
+				System.out.println(cont+1+" Marca: "+i.getMarca()+" Modelo: "+i.getModelo());
 				cont++;
 			}
 		}

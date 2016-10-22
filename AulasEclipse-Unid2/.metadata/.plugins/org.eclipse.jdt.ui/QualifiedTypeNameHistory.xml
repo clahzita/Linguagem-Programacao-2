@@ -6,13 +6,19 @@
 <fullyQualifiedTypeName name="br.imd.clarissa.entidades.Porta"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.exceptions.SaldoInsuficienteException"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.banco.Banco"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.entidades.Veiculo"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.entidades.Moto"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.entidades.Carro"/>
-<fullyQualifiedTypeName name="br.imd.clarissa.banco.Repositorio"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.dao.MotoDao"/>
-<fullyQualifiedTypeName name="br.imd.clarissa.entidades.Aluguel"/>
 <fullyQualifiedTypeName name="br.imd.clarissa.entidades.Cliente"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.dao.CarroDao"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.entidades.Aluguel"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.exceptions.CadastroAluguelException"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.banco.Repositorio"/>
+<fullyQualifiedTypeName name="br.imd.clarissa.entidades.ReciboAluguel"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package br.imd.clarissa.exceptions;
+
+public class CadastroAluguelException extends Exception {
+
+}

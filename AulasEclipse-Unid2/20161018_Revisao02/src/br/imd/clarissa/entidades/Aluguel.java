@@ -1,25 +1,28 @@
 package br.imd.clarissa.entidades;
 
-import java.util.Date;
 import java.text.NumberFormat;  
-import java.text.SimpleDateFormat;  
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 
 import br.imd.clarissa.banco.Repositorio;
+import br.imd.clarissa.exceptions.CadastroAluguelException;
 
 public class Aluguel {
 	private Cliente cliente;
 	private Veiculo veiculo;
-	private Date dataAluguel;
-	private Date dataDevolucao;
+	private LocalDate dataAluguel;
+	private LocalDate dataDevolucao;
 	private double valorPgto;
 	
-	public Aluguel(Cliente cliente, Veiculo veiculo, Date dataAluguel) {
+	public Aluguel(Cliente cliente, Veiculo veiculo, LocalDate dataAluguel) {
 		super();
 		this.cliente = cliente;
 		this.veiculo = veiculo;
 		this.dataAluguel = dataAluguel;
 		this.setDataDevolucao(dataAluguel);		
-		this.valorPgto = 0;
+		this.calcularValorPagamento();
 		
 	}
 	
@@ -37,27 +40,26 @@ public class Aluguel {
 
 
 
-	public Date getDataAluguel() {
+	public LocalDate getDataAluguel() {
 		return dataAluguel;
 	}
 
 
 
-	public Date getDataDevolucao() {
+	public LocalDate getDataDevolucao() {
 		return dataDevolucao;
 	}
 
 
 
-	private void setDataDevolucao(Date dataAluguel) {
-		Date a = new Date("2004/09/01");         
-		a.setDate(a.getDate() + 10);          
-		  
-		String formato = "dd/MM/yyyy";  
-		SimpleDateFormat dataFormatada = new SimpleDateFormat(formato);   
-		System.out.println("Daqui há dez dias: " + dataFormatada.format(a));  
+	private void setDataDevolucao(LocalDate dataAluguel) {
+		if(veiculo instanceof Moto){
+			dataDevolucao = dataAluguel.plusDays(2);
+		}
+		else{
+			dataDevolucao = dataAluguel.plusDays(3);
+		}         
 		
-		this.dataDevolucao = dataDevolucao;
 	}
 
 
@@ -87,23 +89,23 @@ public class Aluguel {
 		}
 	}
 	
-	public void cadastrarAluguel(Aluguel e){
+	public void cadastrarAluguel() throws CadastroAluguelException{
 		if(veiculo instanceof Moto){
 			Moto aux = (Moto)veiculo;
 			 if((cliente.getCnh()==null && aux.getCilindradas() <= 50) || cliente.getCnh()!=null){
-				 Repositorio.getBancoAluguel().add(e);
+				 Repositorio.getBancoAluguel().add(new Aluguel(getCliente(), getVeiculo(), getDataAluguel()));
 			 }
 			 else if(cliente.getCnh()==null && aux.getCilindradas() > 50){
-				 System.out.println("Cliente não tem carteira de motorista cadastrada e a moto tem mais que 50 cilindradas.");
+				 throw new CadastroAluguelException("Cliente não tem carteira de motorista cadastrada e a moto tem mais que 50 cilindradas.");
 			 }
 			 
 		}
 		else{
 			if(cliente.getCnh() != null){
-				Repositorio.getBancoAluguel().add(e);
+				Repositorio.getBancoAluguel().add(new Aluguel(getCliente(), getVeiculo(), getDataAluguel()));
 			}
 			else{
-				System.out.println("Cliente não tem carteira de motorista cadastrada.");
+				throw new CadastroAluguelException("Cliente não tem carteira de motorista cadastrada.");
 			}
 		}
 		
@@ -115,6 +117,10 @@ public class Aluguel {
 		
 	}
 	
+	public ArrayList<Aluguel> listarTodosAlugueis(){
+		return Repositorio.getBancoAluguel();
+		
+	}
 	
 	
 	
