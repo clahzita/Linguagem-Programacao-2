@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+package br.com.locavel.entidades;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Aluguel {
+	ArrayList<Aluguel> alugueisRegistados = new ArrayList<Aluguel>();
+	private double valor;
+	private LocalDate dataAluguel;
+	private LocalDate dataDevolucao;
+	private Cliente solicitante;
+	
+	private String modeloCarro;
+	private double potenciaCarro;
+	
+	private String modeloMoto;
+	private int cilindradaMoto;
+	
+	
+	
+	
+	
+	
+
+}

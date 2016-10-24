@@ -1,0 +1,14 @@
+package br.com.locavel.banco;
+
+import java.util.ArrayList;
+
+import br.com.locavel.entidades.Veiculo;
+
+public class Banco {
+	public static ArrayList<Veiculo> bancoVeiculos = new ArrayList<Veiculo>();
+	
+	
+	
+	
+
+}

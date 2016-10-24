@@ -1,5 +1,0 @@
-package br.imd.clarissa;
-
-public abstract class Veiculo {
-
-}

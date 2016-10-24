@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package br.com.locavel.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Aluguel {
+	ArrayList<Aluguel> alugueisRegistados = new ArrayList<Aluguel>();
+	private double valor;
+	
+
+}

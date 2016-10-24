@@ -1,0 +1,8 @@
+package br.com.locavel.dao;
+
+public interface GenericDao {
+	
+	public void inserir(Veiculo e);
+	public void excluir(Veiculo e);
+	
+}

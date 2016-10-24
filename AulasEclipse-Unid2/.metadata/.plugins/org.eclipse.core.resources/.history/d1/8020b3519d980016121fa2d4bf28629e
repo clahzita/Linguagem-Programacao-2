@@ -1,0 +1,5 @@
+package imd.clarissa.entidades;
+
+public class Veiculo {
+	
+}

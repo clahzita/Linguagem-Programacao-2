@@ -1,7 +1,0 @@
-package br.imd.clarissa.entidades;
-
-public class Cliente {
-	private String nome;
-	private String cnh;
-	
-}

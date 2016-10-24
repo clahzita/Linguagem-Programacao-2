@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package br.com.locavel.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Moto extends Veiculo{
+
+}

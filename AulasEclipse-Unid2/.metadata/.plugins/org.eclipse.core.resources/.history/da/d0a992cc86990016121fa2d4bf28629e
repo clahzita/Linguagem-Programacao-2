@@ -1,0 +1,39 @@
+package br.com.locavel.testes;
+
+import static org.junit.Assert.*;
+
+import java.time.LocalDate;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import br.com.locavel.entidades.Aluguel;
+import br.com.locavel.entidades.Cliente;
+
+public class AluguelTest {
+	Aluguel alug1 = new Aluguel(LocalDate.of(2016, 10, 22), new Cliente("Maria", "002"), "HB20", 2.0);
+	@Before
+	protected void declararVariaveis(){
+		Aluguel alug1 = new Aluguel(LocalDate.of(2016, 10, 22), new Cliente("Maria", "002"), "HB20", 2.0);
+		
+	}
+	
+	@Test
+	public void valoresAlugueisTeste() {
+		alug1.
+		assertEquals(200, , delta);
+		
+		
+	}
+	
+	@Test
+	public void dataDevolucaoTeste() {
+		
+	}
+	
+	@Test
+	public void insercaoAluguelTeste() {
+		
+	}
+
+}
