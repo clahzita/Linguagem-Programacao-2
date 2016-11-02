@@ -1,0 +1,55 @@
+/**
+ * 
+ */
+package br.com.locavel.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Carro extends Veiculo {
+	private double potenciaMotor;
+	private int qtdePortas;
+		
+	/**
+	 * @param marca
+	 * @param modelo
+	 * @param potenciaMotor
+	 * @param qtdePortas
+	 */
+	public Carro(String marca, String modelo, double potenciaMotor, int qtdePortas) {
+		super(marca, modelo);
+		this.potenciaMotor = potenciaMotor;
+		this.qtdePortas = qtdePortas;
+	}
+	
+	
+	/**
+	 * @return the potenciaMotor
+	 */
+	public double getPotenciaMotor() {
+		return potenciaMotor;
+	}
+	/**
+	 * @param potenciaMotor the potenciaMotor to set
+	 */
+	public void setPotenciaMotor(double potenciaMotor) {
+		this.potenciaMotor = potenciaMotor;
+	}
+	/**
+	 * @return the qtdePortas
+	 */
+	public int getQtdePortas() {
+		return qtdePortas;
+	}
+	/**
+	 * @param qtdePortas the qtdePortas to set
+	 */
+	public void setQtdePortas(int qtdePortas) {
+		this.qtdePortas = qtdePortas;
+	}
+
+	
+	
+	
+}

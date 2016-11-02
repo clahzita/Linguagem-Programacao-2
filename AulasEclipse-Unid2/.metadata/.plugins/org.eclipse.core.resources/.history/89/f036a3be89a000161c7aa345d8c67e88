@@ -1,0 +1,19 @@
+package br.imd.controle;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import br.imd.modelo.Empregado;
+import br.imd.modelo.Setor;
+
+public class EmpregadoTest {
+	Setor x = new Setor(000, "Gestao de Pessoas");
+	Empregado a = new Empregado("Joao", "Rua 02", "99909-0088", "masculino", 1988, x, 1999, 5);
+	
+	@Test
+	public void test() {
+		assertEquals(28, a.calcularIdade(a.getAnoNascimento()),0);
+	}
+
+}

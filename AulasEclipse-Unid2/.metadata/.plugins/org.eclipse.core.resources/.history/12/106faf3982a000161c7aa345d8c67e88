@@ -1,0 +1,68 @@
+package br.imd.controle;
+
+import java.util.ArrayList;
+
+import br.imd.modelo.Empregado;
+import br.imd.modelo.Fornecedor;
+import br.imd.modelo.Pessoa;
+import br.imd.modelo.Setor;
+
+public class DAO implements GenericDAO {
+	public static ArrayList<Pessoa> bancoPessoa = new ArrayList<Pessoa>();
+	public static ArrayList<Fornecedor> bancoFornecedor = new ArrayList<Fornecedor>();
+	public static ArrayList<Empregado> bancoEmpregado = new ArrayList<Empregado>();
+	public static ArrayList<Setor> bancoSetor = new ArrayList<Setor>();
+	
+	
+	@Override
+	public void inserirPessoa(Pessoa pessoa) {
+		bancoPessoa.add(pessoa);
+
+	}
+
+	@Override
+	public void inserirFornecedor(Fornecedor fornecedor) {
+		bancoFornecedor.add(fornecedor);
+
+	}
+
+	@Override
+	public void inserirEmpregado(Empregado empregado) {
+		bancoEmpregado.add(empregado);
+
+	}
+
+	@Override
+	public void inserirSetor(Setor setor) {
+		bancoSetor.add(setor);
+
+	}
+
+	@Override
+	public void listarPessoas() {
+		
+		for(Pessoa x: bancoPessoa){
+			System.out.println();
+		}
+
+	}
+
+	@Override
+	public void listarFornecedores() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarEmpregados() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarSetores() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

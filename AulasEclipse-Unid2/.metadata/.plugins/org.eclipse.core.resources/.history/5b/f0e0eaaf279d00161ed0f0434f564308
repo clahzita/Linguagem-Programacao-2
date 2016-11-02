@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package br.imd.exceptions;
+
+/**
+ * @author clarissa
+ *
+ */
+public class ImprimePessoaException extends Exception {
+
+}

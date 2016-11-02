@@ -21,12 +21,23 @@
 <fullyQualifiedTypeName name="br.com.locavel.entidades.Carro"/>
 <fullyQualifiedTypeName name="br.com.locavel.entidades.Veiculo"/>
 <fullyQualifiedTypeName name="br.com.locavel.entidades.Moto"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="br.com.locavel.banco.Banco"/>
 <fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
 <fullyQualifiedTypeName name="br.com.locavel.entidades.ChecarAluguelException"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="br.com.locavel.entidades.Aluguel"/>
-<fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="br.com.locavel.entidades.Cliente"/>
+<fullyQualifiedTypeName name="java.time.Instant"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.time.Period"/>
+<fullyQualifiedTypeName name="br.imd.entidades.Pessoa"/>
+<fullyQualifiedTypeName name="br.imd.entidade.Arvore"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.imd.controle.DAO"/>
+<fullyQualifiedTypeName name="br.imd.modelo.Pessoa"/>
+<fullyQualifiedTypeName name="br.imd.controle.FaltandoDadosExecption"/>
+<fullyQualifiedTypeName name="br.imd.modelo.ValoresNegativosExecption"/>
+<fullyQualifiedTypeName name="br.imd.modelo.Empregado"/>
+<fullyQualifiedTypeName name="br.imd.modelo.Setor"/>
+<fullyQualifiedTypeName name="br.imd.modelo.Fornecedor"/>
 </qualifiedTypeNameHistroy>

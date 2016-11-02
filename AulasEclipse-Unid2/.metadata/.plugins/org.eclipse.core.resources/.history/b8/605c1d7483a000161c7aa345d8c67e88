@@ -1,0 +1,10 @@
+import br.imd.controle.DAO;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

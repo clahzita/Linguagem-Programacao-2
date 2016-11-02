@@ -1,0 +1,13 @@
+package br.imd.controle;
+
+public class FaltandoDadosExecption extends GenericException {
+
+	public FaltandoDadosExecption() {
+		super(this.getMessage());
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getMessage(){
+		return "Atributo não foi preenchido ou informado!";
+	}
+}

@@ -1,0 +1,65 @@
+/**
+ * 
+ */
+package br.com.locavel.entidades;
+
+/**
+ * @author clarissa
+ *
+ */
+public class Carro extends Veiculo {
+	private double potenciaMotor;
+	private int qtdePortas;
+		
+	/**
+	 * Metodo responsavel por implementar o objeto carro.
+	 * 
+	 * @param marca Refere-se a marca do carro.
+	 * @param modelo Refere-se ao modelo do carro.
+	 * @param potenciaMotor Refere-se a potência do motor do carro.
+	 * @param qtdePortas Refere-se a quantidade de portas do carro. 
+	 */
+	public Carro(String marca, String modelo, double potenciaMotor, int qtdePortas) {
+		super(marca, modelo);
+		this.setPotenciaMotor(potenciaMotor);
+		this.setQtdePortas(qtdePortas);
+	}
+	
+	
+	/**
+	 * Retorna a potencia do motor do carro.
+	 * @return the potenciaMotor Potencia do motor do carro.
+	 */
+	public double getPotenciaMotor() {
+		return potenciaMotor;
+	}
+	/**
+	 * Substitui o valor de potenciaMotor do objeto.	 * 
+	 * @param potenciaMotor the potenciaMotor to set
+	 */
+	public void setPotenciaMotor(double potenciaMotor) {
+		if(potenciaMotor >= 1.0 && potenciaMotor <= 3.0){
+			this.potenciaMotor = potenciaMotor;
+		}
+	}
+	/**
+	 * Retorna a quantidade de portas do carro.
+	 * @return the qtdePortas Quantidade de portas do carro.
+	 */
+	public int getQtdePortas() {
+		return qtdePortas;
+	}
+	/**
+	 * Substitui o valor de qtdePortas do objeto.
+	 * @param qtdePortas the qtdePortas to set
+	 */
+	public void setQtdePortas(int qtdePortas) {
+		if(qtdePortas >= 1 && qtdePortas <= 4){
+			this.qtdePortas = qtdePortas;
+		}
+	}
+
+	
+	
+	
+}

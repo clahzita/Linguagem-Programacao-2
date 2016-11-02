@@ -1,0 +1,16 @@
+package br.imd.modelo;
+
+public class Fornecedor extends Pessoa {
+
+	private double valorCredito;
+	private double valorDivida;
+	
+	public Fornecedor(String nome, String endereco, String telefone, String sexo, int anoNascimento) {
+		super(nome, endereco, telefone, sexo, anoNascimento);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public obterSaldo(){
+		return this.valorCredito - this.valorDivida;
+	}
+}

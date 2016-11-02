@@ -1,0 +1,104 @@
+package br.imd.controle;
+
+import java.util.ArrayList;
+
+import br.imd.modelo.Empregado;
+import br.imd.modelo.Fornecedor;
+import br.imd.modelo.Pessoa;
+import br.imd.modelo.Setor;
+
+public class DAO implements GenericDAO {
+	public static ArrayList<Pessoa> bancoPessoa = new ArrayList<Pessoa>();
+	public static ArrayList<Fornecedor> bancoFornecedor = new ArrayList<Fornecedor>();
+	public static ArrayList<Empregado> bancoEmpregado = new ArrayList<Empregado>();
+	public static ArrayList<Setor> bancoSetor = new ArrayList<Setor>();
+	
+	
+	@Override
+	public void inserirPessoa(Pessoa pessoa) {
+		bancoPessoa.add(pessoa);
+
+	}
+
+	@Override
+	public void inserirFornecedor(Fornecedor fornecedor) {
+		bancoFornecedor.add(fornecedor);
+
+	}
+
+	@Override
+	public void inserirEmpregado(Empregado empregado) {
+		bancoEmpregado.add(empregado);
+
+	}
+
+	@Override
+	public void inserirSetor(Setor setor) {
+		bancoSetor.add(setor);
+
+	}
+
+	@Override
+	public void listarPessoas() {
+		System.out.println("Lista de Pessoas");
+		
+		for(Pessoa x: bancoPessoa){
+			
+			System.out.println("--------------------");
+			System.out.println("Nome: "+x.getNome()+
+								"\nIdade: "+x.calcularIdade(x.getAnoNascimento())+" Sexo: "+x.getSexo()+
+								"\nEndereco: "+x.getEndereco()+
+								"\nTelefone:"+x.getTelefone() );
+		}
+	}
+
+	@Override
+	public void listarFornecedores() {
+		System.out.println("Lista de Fornecedores");
+		
+		for(Fornecedor x: bancoFornecedor){
+			System.out.println("--------------------");
+			System.out.println("Nome: "+x.getNome()+
+								"\nIdade: "+x.calcularIdade(x.getAnoNascimento())+" Sexo: "+x.getSexo()+
+								"\nEndereco: "+x.getEndereco()+
+								"\nTelefone:"+x.getTelefone()+
+								"\nCrédito (em reais): "+x.getValorCredito()+" Divida (em reais): "+x.getValorDivida()+
+								"Valor do Saldo (em reais): "+x.obterSaldo() );
+
+		}
+
+	}
+
+	@Override
+	public void listarEmpregados() {
+		System.out.println("Lista de Empregados");
+		
+		for(Empregado x: bancoEmpregado){
+			System.out.println("--------------------");
+			System.out.println("Nome: "+x.getNome()+
+								"\nIdade: "+x.calcularIdade(x.getAnoNascimento())+" Sexo: "+x.getSexo()+
+								"\nEndereco: "+x.getEndereco()+
+								"\nTelefone:"+x.getTelefone()+
+								"Setor: "+x.getSetor().getCodigoSetor()+" "+x.getSetor().getDescricaoSetor()+
+								"\nSalario Base (em reais): "+x.getSalarioBase()+" Imposto (em %): "+x.getImposto()+
+								"Salário Líquido (em reais): "+x.calcularSalario() );
+
+		}
+
+	}
+
+	@Override
+	public void listarSetores() {
+		System.out.println("Lista de Setores");
+		
+		for(Setor x: bancoSetor){
+			System.out.println("--------------------");
+			System.out.println("Codigo: "+x.getCodigoSetor()+
+								"\nDescricao: "+x.getDescricaoSetor());
+
+		}
+
+
+	}
+
+}

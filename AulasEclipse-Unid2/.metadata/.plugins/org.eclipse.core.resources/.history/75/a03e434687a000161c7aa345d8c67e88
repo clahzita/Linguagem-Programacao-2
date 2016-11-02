@@ -1,0 +1,51 @@
+package br.imd.modelo;
+
+public class Fornecedor extends Pessoa {
+
+	private double valorCredito;
+	private double valorDivida;
+	
+	public Fornecedor(String nome, String endereco, String telefone, String sexo, int anoNascimento) {
+		super(nome, endereco, telefone, sexo, anoNascimento);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public double getValorCredito() {
+		return valorCredito;
+	}
+
+
+
+	public void setValorCredito(double valorCredito) throws ValoresNegativosExecption {
+		if(valorCredito > 0){
+			this.valorCredito = valorCredito;
+		}else{
+			throw new ValoresNegativosExecption();
+		}
+	}
+
+
+
+	public double getValorDivida() {
+		return valorDivida;
+	}
+
+
+
+	public void setValorDivida(double valorDivida) throws ValoresNegativosExecption {
+		if(valorDivida > 0){
+			this.valorDivida = valorDivida;
+		}else{
+			throw new ValoresNegativosExecption();
+		}
+		
+	}
+
+
+
+	public double obterSaldo(){
+		return this.valorCredito - this.valorDivida;
+	}
+}

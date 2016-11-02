@@ -1,0 +1,31 @@
+import br.imd.controle.DAO;
+import br.imd.controle.FaltandoDadosExecption;
+import br.imd.modelo.Empregado;
+import br.imd.modelo.Pessoa;
+import br.imd.modelo.Setor;
+import br.imd.modelo.ValoresNegativosExecption;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		DAO teste = new DAO();
+		
+		try {
+			teste.inserirPessoa(new Pessoa("Maria", "Rua 56", "9999-0088", "feminino", 1988));
+			teste.inserirPessoa(new Pessoa("Joana", "Rua 03", "9999-0077", "feminino", 1970));
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		teste.listarPessoas();
+		
+		try{
+			teste.inserirEmpregado(new Empregado("Fernando", "Av. Geraldo", "3455-0000", "masculino", 1977, new Setor(0009, "Contabilidade"), 2000, 11));
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+	}
+
+}

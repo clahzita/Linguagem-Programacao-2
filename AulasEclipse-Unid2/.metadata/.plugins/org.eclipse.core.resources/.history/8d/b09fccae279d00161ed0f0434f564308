@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package br.imd.exceptions;
+
+/**
+ * @author clarissa
+ *
+ */
+public class RemovePessoaException extends Exception {
+	public RemovePessoaException(String msg){
+		super(msg);
+	}
+}

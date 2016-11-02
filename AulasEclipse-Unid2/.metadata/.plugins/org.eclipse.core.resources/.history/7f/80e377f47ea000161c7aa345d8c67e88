@@ -1,0 +1,10 @@
+package br.imd.modelo;
+
+public class Fornecedor extends Pessoa {
+	private double valorCredito;
+	private double valorDivida;
+	
+	public obterSaldo(){
+		return this.valorCredito - this.valorDivida;
+	}
+}

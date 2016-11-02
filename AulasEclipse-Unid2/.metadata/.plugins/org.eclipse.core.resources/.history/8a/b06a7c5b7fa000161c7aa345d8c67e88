@@ -1,0 +1,12 @@
+package br.imd.modelo;
+
+public class Empregado extends Pessoa {
+	private String setor;
+	private double salarioBase;
+	private int imposto;
+	
+	public double calcularSalario(){
+		return this.salarioBase * this.imposto / 100;
+	}
+
+}

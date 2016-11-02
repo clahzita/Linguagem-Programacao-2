@@ -1,0 +1,8 @@
+package br.imd.controle;
+
+public interface GenericDAO {
+	public void inserirPessoa();
+	public void inserirFornecedor();
+	public void inserirEmpregado();
+	public void inserirSetor();
+}

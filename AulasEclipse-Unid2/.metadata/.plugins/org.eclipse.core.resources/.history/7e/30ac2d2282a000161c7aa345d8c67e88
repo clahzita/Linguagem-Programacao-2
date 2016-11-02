@@ -1,0 +1,50 @@
+package br.imd.modelo;
+
+public class Pessoa {
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String sexo;
+	private int anoNascimento;
+	
+	public Pessoa(String nome, String endereco, String telefone, String sexo, int anoNascimento) {
+		super();
+		this.setNome(nome);
+		this.setEndereco(endereco);
+		this.setTelefone(telefone);
+		this.sexo = sexo;
+		this.anoNascimento = anoNascimento;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public int calcularIdade(int ano){
+		return 2016 - this.anoNascimento;
+	}
+	
+	
+
+}
+

@@ -1,0 +1,13 @@
+package br.imd.controle;
+
+public class GenericException extends Exception {
+	private String msg;
+	
+	public GenericException(String msg){
+		super(msg);
+	}
+	
+	public String getMessage(){
+		return msg;
+	} 
+}

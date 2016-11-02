@@ -1,0 +1,58 @@
+package br.imd.controle;
+
+import br.imd.modelo.Empregado;
+import br.imd.modelo.Fornecedor;
+import br.imd.modelo.Pessoa;
+import br.imd.modelo.Setor;
+
+public class DAO implements GenericDAO {
+
+	@Override
+	public void inserirPessoa(Pessoa pessoa) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void inserirFornecedor(Fornecedor fornecedor) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void inserirEmpregado(Empregado empregado) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void inserirSetor(Setor setor) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarPessoas() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarFornecedores() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarEmpregados() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void listarSetores() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

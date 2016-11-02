@@ -1,0 +1,13 @@
+import br.imd.controle.DAO;
+import br.imd.modelo.Pessoa;
+
+public class Aplicacao {
+
+	public static void main(String[] args) {
+		DAO teste = new DAO();
+		
+		teste.inserirPessoa(new Pessoa("Maria", "Rua da Aurora", "9999-0088", "feminino", 1988));
+		
+	}
+
+}
